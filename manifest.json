@@ -1,0 +1,33 @@
+{
+  "name": "Chrome EQUALIZER",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "Chrome extension for Graphic Equalizer.",
+  "icons" : {
+    "128": "images/icon-128.png",
+    "256": "images/icon-256.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "Chrome EQUALIZER"
+  },
+  "background": {
+    "scripts": ["javascripts/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "css": ["stylesheets/content.css"],
+      "js": ["lib/xsound.js", "javascripts/UI.js", "javascripts/GraphicEqualizer.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "https://*/*"
+  ]
+}
