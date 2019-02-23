@@ -1,0 +1,36 @@
+{
+  "name": "chrome-equalizer",
+  "version": "0.0.0",
+  "description": "Chrome extension for Graphic Equalizer.",
+  "scripts": {
+    "jslint": "eslint javascripts/*.js",
+    "stylelint": "stylelint stylesheets/*.css",
+    "lint": "npm run jslint && npm run stylelint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Korilakkuma/Chrome-EQUALIZER.git"
+  },
+  "keywords": [
+    "Chrome extension",
+    "Graphic Equalizer",
+    "Web Audio API",
+    "XSound"
+  ],
+  "author": "Korilakkuma <rilakkuma.san.xjapan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Korilakkuma/Chrome-EQUALIZER/issues"
+  },
+  "homepage": "https://github.com/Korilakkuma/Chrome-EQUALIZER",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-cli": "^1.1.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "xsound": "^2.8.1"
+  }
+}
