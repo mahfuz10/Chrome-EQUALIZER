@@ -25,12 +25,12 @@
   "homepage": "https://github.com/Korilakkuma/Chrome-EQUALIZER",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.14.1",
+    "eslint": "^5.16.0",
     "eslint-cli": "^1.1.1",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
-    "xsound": "^2.8.1"
+    "xsound": "^2.10.3"
   }
 }
