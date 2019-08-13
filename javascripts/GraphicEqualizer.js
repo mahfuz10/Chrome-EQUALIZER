@@ -58,8 +58,8 @@ class GraphicEqualizer extends X.Effector {
 
         const v = parseFloat(value);
 
-        const mindB = -12;
-        const maxdB =  12;
+        const mindB = -24;
+        const maxdB =  24;
 
         if ((v >= mindB) && (v <= maxdB)) {
             this.filters[index].gain.value = v;

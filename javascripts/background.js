@@ -41,8 +41,6 @@ chrome.browserAction.onClicked.addListener(() => {
                   })
                   .install('graphicequalizer', equalizer);
 
-                console.dir(X('media').module('graphicequalizer'));
-
                 // for Visualizer
                 visualizerCanvas = document.createElement('canvas');
 
@@ -121,7 +119,7 @@ chrome.browserAction.onClicked.addListener(() => {
 
                     const { width : w, height : h } = controllerCanvas;
 
-                    const maxdB = 12;
+                    const maxdB = 24;
                     const rate  = (middle - y) / middle;
                     const dB    = rate * maxdB;
 
@@ -148,7 +146,7 @@ chrome.browserAction.onClicked.addListener(() => {
 
                             f125Y = y;
 
-                            X('media').module('graphicequalizer').param(FREQUENCIES[0], dB);
+                            X('media').module('graphicequalizer').param(FREQUENCIES[0], 2 * dB);
                         }
                     }
 
