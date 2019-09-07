@@ -59,7 +59,7 @@ chrome.browserAction.onClicked.addListener(() => {
                     .param({
                         interval : 'auto',
                         shape    : 'rect',
-                        wave     : '#1a9ebf',
+                        wave     : '#ff0100',
                         width    : 1,
                         grid     : 'none',
                         text     : 'none',
